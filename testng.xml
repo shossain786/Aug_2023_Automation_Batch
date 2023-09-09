@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.itest.reporter.ExtentListeners" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Aug_2023_Automation_Batch">
+        <classes>
+            <class name="org.itest.magneto.HomePageTest">
+                <methods>
+                    <include name="verifyTitle"/>
+                    <include name="verifyUrl"/>
+                    <include name="verifySaleMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
