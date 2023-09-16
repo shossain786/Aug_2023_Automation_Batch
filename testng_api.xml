@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.itest.reporter.ExtentListeners" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="ReqRes API Tests">
+        <classes>
+            <class name="org.itest.apitests.UserAPITests">
+                <methods>
+                    <include name="getUserList"/>
+                    <include name="getSingleUser"/>
+                    <include name="createUserTest"/>
+                </methods>
+            </class>
+            <class name="org.itest.apitests.LoginAPITests">
+                <methods>
+                    <include name="inValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

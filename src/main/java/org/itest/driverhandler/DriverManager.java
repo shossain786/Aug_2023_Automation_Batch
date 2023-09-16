@@ -38,17 +38,32 @@ public class DriverManager {
     private void launchBrowser() {
         if (properties.getProperty("browser").equals("firefox")){
             logger.info("Executing test in Firefox Browser.");
-            driver = new FirefoxDriver();
+            if (properties.getProperty("headless").equals("true"))
+                executeFirefoxHeadless();
+            else
+                driver = new FirefoxDriver();
         }
         else if (properties.getProperty("browser").equals("chrome")){
             logger.info("Executing test in Chrome Browser.");
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            driver = new ChromeDriver(options);
+            if (properties.getProperty("headless").equals("true"))
+                executeChromeHeadless();
+            else
+                driver = new ChromeDriver();
         } else {
             logger.info("Executing test in Chrome Browser.");
             driver = new ChromeDriver();
         }
+    }
+
+    public void executeChromeHeadless() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
+    }
+    public void executeFirefoxHeadless() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
     }
 
     private Properties getProperties() throws IOException {

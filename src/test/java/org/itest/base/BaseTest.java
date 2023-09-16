@@ -18,10 +18,6 @@ public class BaseTest {
     public WebDriver driver;
     Properties properties;
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
     @BeforeSuite
     public void beforeSuite() throws IOException {
         properties = getProperties();
