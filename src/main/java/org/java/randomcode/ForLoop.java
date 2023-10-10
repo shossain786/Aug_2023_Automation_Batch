@@ -9,13 +9,6 @@ public class ForLoop {
 
         System.out.println("Completed!");
     }
-
-
-
-
-
-
-
 }
 //infinite loop
 /*
