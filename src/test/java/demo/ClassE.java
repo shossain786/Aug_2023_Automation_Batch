@@ -9,5 +9,6 @@ public class ClassE {
         objA.num2 = 30;
 //
         System.out.println(objA.num2);
+
     }
 }

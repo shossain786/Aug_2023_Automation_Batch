@@ -4,11 +4,16 @@ public class ClassA {
 
     int num1 = 10;
     public int num2 = 15;
-    protected int num3 = 20;
-    private int num4 = 25;
+    protected static int num3 = 20;
+    protected int num4 =15;
+    private int num41 = 25;
     private String sceretKey = "ACOU893242&#$MK";
     public static void main(String[] args) {
 
+    }
+
+    protected void printMessage() {
+        System.out.println("Inside ClassA");
     }
 
     public void method1() {
