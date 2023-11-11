@@ -1,6 +1,6 @@
 package org.java.inheritance;
 
-public class ParentClass {
+public class ParentClass{
     static void greeting(){    //static method
         System.out.println("Hello from Parent class.");
     }
