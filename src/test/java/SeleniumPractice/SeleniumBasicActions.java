@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SeleniumBasicOperations {
+public class SeleniumBasicActions {
 
     public static void login(WebDriver driver) {
         driver.findElement(By.xpath("//input[@id='username']")).sendKeys("admin");
