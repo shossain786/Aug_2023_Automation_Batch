@@ -13,7 +13,7 @@ public class SeleniumBasicOperations {
     }
     static void waitTime(int sec) {
         try {
-            Thread.sleep(sec * 1000);
+            Thread.sleep(sec * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
