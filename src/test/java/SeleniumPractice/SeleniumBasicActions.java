@@ -19,10 +19,11 @@ public class SeleniumBasicActions {
         }
     }
 
-    public static void browserSetup(WebDriver driver){
+    public static WebDriver browserSetup(WebDriver driver){
         driver = new ChromeDriver();  //to open a browser instance
         driver.manage().window().maximize();    //to maximise the browser window
-        driver.get("http://localhost:8082/iTinstruct/");
+        driver.get("http://localhost:8080/iTinstruct-1.3/");
+        return driver;
     }
 
     public static void quiteBrowser(WebDriver driver) {
