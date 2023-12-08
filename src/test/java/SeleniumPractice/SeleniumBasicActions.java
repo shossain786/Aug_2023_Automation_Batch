@@ -22,7 +22,7 @@ public class SeleniumBasicActions {
     public static WebDriver browserSetup(WebDriver driver){
         driver = new ChromeDriver();  //to open a browser instance
         driver.manage().window().maximize();    //to maximise the browser window
-        driver.get("http://localhost:8080/iTinstruct-1.3.3/");
+        driver.get("http://localhost:8080/iTinstruct-1.3.4/");
         return driver;
     }
 
