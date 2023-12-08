@@ -3,7 +3,6 @@ package SeleniumPractice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Set;
 
@@ -14,7 +13,7 @@ public class WindowHandling{
         driver.manage().window().maximize();
         driver.get("https://www.w3schools.com/jsref/met_win_open.asp");
 
-        SeleniumBasicActions.waitTime(6);
+        SeleniumBasicActions.waitTime(4);
         System.out.println(driver.getTitle());
 
         driver.findElement(By.xpath("(//a[.='Try it Yourself »'])[1]")).click();
@@ -35,8 +34,6 @@ public class WindowHandling{
         String newWindow = windows.iterator().next();
 
         driver.switchTo().window(newWindow);
-
-//        driver.switchTo().newWindow(newWindow);
 
         System.out.println("Title of new Page: " + driver.getTitle());
 
