@@ -54,6 +54,10 @@ public class LocatorClass1 {
 
         driver.findElement(By.id("send2")).click();
     }
+
+    public void methods1() throws InterruptedException {
+        Thread.sleep(3000);
+    }
 }
 // Actions in selection
 // click, sendKeys, navigate
