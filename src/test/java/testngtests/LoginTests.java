@@ -15,6 +15,9 @@ public class LoginTests {
     static void loginValiduserIdInvalidPwd(){
         System.out.println("loginValiduserIdInvalidPwd");
     }
+    void loginBalnkField(){
+        System.out.println();
+    }
     @Test(enabled = true, priority = 1)
     static void loginInvaliduserIdValidPwd(){
         System.out.println("loginInvaliduserIdValidPwd");
