@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <!-- user defined name-->
+    <test name="regression">
+        <classes>
+            <class name="testngtests.TestNGDemoClass2">
+            </class>
+            <class name="testngtests.LoginTests">
+                <methods>
+                    <include name="loginValidCredentials" description="This test doing something"/>
+                    <include name="loginInValidCredentials" />
+                    <include name="loginValiduserIdInvalidPwd" />
+                    <exclude name="loginInvaliduserIdValidPwd" />
+                    <include name="loginBlankUserIdValidPwd" />
+                    <include name="loginValiduserIdBlankPwd" />
+                </methods>
+            </class>
+            <class name="testngtests.TestNGDemoClass2">
+                <methods>
+                    <include name="test_001" />
+                    <include name="test_002" />
+                    <include name="test_003" />
+                    <exclude name="test_004" />
+                    <include name="test_005" />
+                    <include name="test_006" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="sanity">
+        <classes>
+            <class name="testngtests.LoginTests">
+                <methods>
+                    <include name="loginValidCredentials"/>
+                    <include name="loginInValidCredentials" />
+                </methods>
+            </class>
+            <class name="testngtests.TestNGDemoClass2">
+                <methods>
+                    <include name="test_001" />
+                    <include name="test_006" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="PAT">
+
+    </test>
+</suite>

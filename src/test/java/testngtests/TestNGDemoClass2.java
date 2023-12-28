@@ -15,7 +15,7 @@ public class TestNGDemoClass2 {
     public void test_004() {
         System.out.println("Inside Test 004");
     }
-    @Test(invocationCount = 1, description = "This test doing something", groups = {"login"})
+    @Test(invocationCount = 1, description = "This test doing something", groups = {"login", "sanity"})
     public void test_005() {
         System.out.println("Inside Test 005");
     }
