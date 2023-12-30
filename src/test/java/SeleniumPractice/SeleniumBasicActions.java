@@ -23,17 +23,18 @@ public class SeleniumBasicActions {
         }
     }
 
-    public static WebDriver browserSetup(WebDriver driver){
-//        new ChromeDriver() always create a new Chrome profile and its not same as our local browser profile
-//        everytime its launches new chrome its always similar to incognitoMode. Which means its do not load
+    public static WebDriver browserSetup(WebDriver driver) {
+//        new ChromeDriver() always create a new Chrome profile and it's not same as our local browser profile
+//        everytime its launches new chrome it's always similar to incognitoMode. Which means its do not load
 //        the existing browser cookies data or the browser which is already quite
 
         String path = System.getProperty("user.dir") + "\\downloads\\";
         System.out.println(path);
 
-        ChromeOptions options = new ChromeOptions();
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("download.default_directory", path);
+
+        ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
 
         driver = new ChromeDriver(options);  //to open a browser instance
