@@ -16,13 +16,15 @@ public class ScreenShotCapture extends SeleniumBasicActions{
         driver = browserSetup(driver);
         login(driver);
 
-//        virtual file
-        File dest = new File("./sc_image.png");
+//        virtual file path of the file to store -> its user defined
+        File destination = new File("./sc_image.png");
 
 //        Java object
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //        Convert the java object file to real file system
-        FileUtils.copyFile(file, dest);
+        FileUtils.copyFile(file, destination);
+//        how to delete the cookies?
+        driver.manage().deleteAllCookies();
 
         quiteBrowser(driver);
     }
