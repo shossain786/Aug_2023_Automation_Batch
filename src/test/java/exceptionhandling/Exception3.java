@@ -2,7 +2,7 @@ package exceptionhandling;
 
 import java.util.Arrays;
 
-public class Exception2 {
+public class Exception3 {
     public static void main(String[] args) {
         String[] employees = {"Sandy", "Mandeep", "Saddam"};
         int[] nums = {12, 10, 30, 35};
@@ -20,22 +20,8 @@ public class Exception2 {
         for (int i = 0; i < length; i++){
             try {
                 System.out.println(nums[i]/divs[i]);
-                try{}
-                catch (Exception e){}
-            } catch (ArithmeticException exception){
-                System.out.println(exception.getMessage());
-                System.out.println("You can not divide any number with zero!");
-                try{}
-                catch (Exception e){
-                    try{}
-                    catch (Exception e1){
-                        try{}
-                        catch (Exception e2){}
-                    }
-                }
-            } catch (ArrayIndexOutOfBoundsException exception) {
-                System.out.println("Exception message: \n"+exception.getMessage());
-                exception.printStackTrace();
+            } catch (Exception e) {
+                System.out.println("Inside main exception");
             }
         }
     }
