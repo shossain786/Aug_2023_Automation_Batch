@@ -3,6 +3,8 @@ package testngtests;
 import org.testng.annotations.Test;
 
 public class LoginTests {
+
+
     @Test(enabled = true, priority = -2)
     static void loginValidCredentials(){
         System.out.println("loginValidCredentials");
@@ -23,11 +25,11 @@ public class LoginTests {
         System.out.println("loginInvaliduserIdValidPwd");
         throw new RuntimeException();
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     static void loginBlankUserIdValidPwd(){
         System.out.println("loginBlankUserIdValidPwd");
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     static void loginValiduserIdBlankPwd(){
         System.out.println("loginValiduserIdBlankPwd");
     }

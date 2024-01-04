@@ -1,11 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
+<suite name="Suite1" >
     <!-- user defined name-->
     <test name="regression">
         <classes>
-            <class name="testngtests.TestNGDemoClass2">
-            </class>
             <class name="testngtests.LoginTests">
                 <methods>
                     <include name="loginValidCredentials" description="This test doing something"/>
@@ -28,7 +26,7 @@
             </class>
         </classes>
     </test>
-    <test name="sanity">
+    <!--<test name="sanity">
         <classes>
             <class name="testngtests.LoginTests">
                 <methods>
@@ -46,5 +44,5 @@
     </test>
     <test name="PAT">
 
-    </test>
+    </test>-->
 </suite>
