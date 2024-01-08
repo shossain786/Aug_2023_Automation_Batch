@@ -1,5 +1,7 @@
 package exceptionhandling;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class Exception3 {
@@ -20,7 +22,7 @@ public class Exception3 {
         for (int i = 0; i < length; i++){
             try {
                 System.out.println(nums[i]/divs[i]);
-            } catch (Exception e) {
+            } catch (ArithmeticException e){}catch (Exception e) {
                 System.out.println("Inside main exception");
             }
         }
@@ -30,7 +32,11 @@ public class Exception3 {
     }
 
     static void printMessage1(String[] nameArray){
-        for (String name : nameArray)
-            System.out.println(name);
+        try {
+            for (String name : nameArray)
+                System.out.println(name);
+        } catch (NoSuchFieldError e){} catch (ArithmeticException e){
+
+        }
     }
 }
