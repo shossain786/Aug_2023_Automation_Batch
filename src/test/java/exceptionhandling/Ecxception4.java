@@ -27,7 +27,7 @@ public class Ecxception4 {
     }
 }
 
-final class ClassA{
-    // methods...
-}
+    final class ClassA{
+        // methods...
+    }
 //throws, thrown
