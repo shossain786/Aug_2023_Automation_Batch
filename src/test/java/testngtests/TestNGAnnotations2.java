@@ -2,24 +2,23 @@ package testngtests;
 
 import org.testng.annotations.*;
 
-public class TestNGAnnotations extends TestBase {
+public class TestNGAnnotations2 extends TestBase {
     @BeforeMethod
     public void testSetUP(){
-        System.out.println("Inside before method");
+        System.out.println("Inside before method2");
     }
 
     @AfterMethod
     public void tearDown(){
-        System.out.println("Inside After method");
+        System.out.println("Inside After method2");
     }
     @Test
     public void test_001(){
         System.out.println("Inside Test001");
     }
-
     @Test
-    public void test_001_1(){
-        System.out.println("Inside Test001_1");
+    public void test_002(){
+        System.out.println("Inside Test002");
     }
     @Test
     public void test_003(){
