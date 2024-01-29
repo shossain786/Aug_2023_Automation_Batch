@@ -7,7 +7,7 @@ public class ArrayListDemo {
     public static void main(String[] args) {
 //        ArrayList employees;
 
-        ArrayList companies = new ArrayList();
+        ArrayList<String> companies = new ArrayList<String>();
 
 //        to get the size of the arraylist we have to use size()
         System.out.println(companies.size());
