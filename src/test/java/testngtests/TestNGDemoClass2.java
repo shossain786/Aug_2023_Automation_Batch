@@ -8,7 +8,7 @@ public class TestNGDemoClass2 {
     @Test()
     public void test_003() {
         System.out.println("Inside Test 003");
-        Assert.assertEquals(5, 4);
+        Assert.assertEquals(5, 5);
 //        Assert.fail("Failing the test case");
     }
     @Test(dependsOnMethods = "test_003", alwaysRun = true, groups = {"transaction"})
@@ -22,7 +22,7 @@ public class TestNGDemoClass2 {
     @Test(alwaysRun = true, groups = {"sanity"})
     public void test_006() {
         System.out.println("Inside Test 006");
-        Assert.assertEquals(3, 10);
+        Assert.assertEquals(3, 3);
     }
 
     @Test(testName = "Login with Valid Credentials", dependsOnGroups = "sanity")

@@ -8,25 +8,26 @@
     <parameter name="password" value="admin" />
     <test name="regression">
         <classes>
-<!--            <class name="testngtests.LoginTests">-->
-<!--                <methods>-->
-<!--                    <include name="loginValidCredentials" description="This test doing something"/>-->
-<!--                    <include name="loginInValidCredentials" />-->
-<!--                    <include name="loginValiduserIdInvalidPwd" />-->
-<!--                    <exclude name="loginInvaliduserIdValidPwd" />-->
-<!--                    <include name="loginBlankUserIdValidPwd" />-->
-<!--                    <include name="loginValiduserIdBlankPwd" />-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testngtests.TestNGDemoClass2">-->
-<!--                <methods>-->
-<!--                    <include name="test_001" />-->
-<!--                    <include name="test_002" />-->
-<!--                    <include name="test_003" />-->
-<!--                    <exclude name="test_004" />-->
-<!--                    <include name="test_005" />-->
-<!--                    <include name="test_006" />-->
-<!--                </methods></class>-->
+            <class name="testngtests.LoginTests">
+                <methods>
+                    <include name="loginValidCredentials" description="This test doing something"/>
+                    <include name="loginInValidCredentials" />
+                    <include name="loginValiduserIdInvalidPwd" />
+                    <exclude name="loginInvaliduserIdValidPwd" />
+                    <include name="loginBlankUserIdValidPwd" />
+                    <include name="loginValiduserIdBlankPwd" />
+                </methods>
+            </class>
+            <class name="testngtests.TestNGDemoClass2">
+                <methods>
+                    <include name="test_001" />
+                    <include name="test_002" />
+                    <include name="test_003" />
+                    <exclude name="test_004" />
+                    <include name="test_005" />
+                    <include name="test_006" />
+                </methods></class>
+            <class name="SeleniumPractice.webtable.WebTableHandling1"></class>
             <!--<class name="testngtests.TestNGAnnotations"></class>
             <class name="testngtests.TestNGAnnotations2"></class>-->
         </classes>
@@ -50,23 +51,23 @@
     <test name="PAT">
 
     </test>-->
-    <test name="test1">
-        <classes>
-            <class name="testngtests.TestNGParameter">
-                <methods>
-                    <include name="test_method001"/>
-                    <include name="test_method002"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="test2">
-        <classes>
-            <class name="testngtests.TestNGParameter1">
-                <methods>
-                    <exclude name="test_method003"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--    <test name="test1">-->
+<!--        <classes>-->
+<!--            <class name="testngtests.TestNGParameter">-->
+<!--                <methods>-->
+<!--                    <include name="test_method001"/>-->
+<!--                    <include name="test_method002"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="test2">-->
+<!--        <classes>-->
+<!--            <class name="testngtests.TestNGParameter1">-->
+<!--                <methods>-->
+<!--                    <exclude name="test_method003"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

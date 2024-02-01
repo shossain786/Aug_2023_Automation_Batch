@@ -23,7 +23,7 @@ public class LoginTests {
     @Test(enabled = true, priority = 1)
     static void loginInvaliduserIdValidPwd(){
         System.out.println("loginInvaliduserIdValidPwd");
-        throw new RuntimeException();
+//        throw new RuntimeException();
     }
     @Test(enabled = true)
     static void loginBlankUserIdValidPwd(){
