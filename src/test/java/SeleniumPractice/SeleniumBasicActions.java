@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +18,7 @@ public class SeleniumBasicActions {
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("admin");
         driver.findElement(By.xpath("//button[@id='submit']")).click();
     }
-    static void waitTime(int sec) {
+    public static void waitTime(int sec) {
         try {
             Thread.sleep(sec * 1000L);
         } catch (InterruptedException e) {
@@ -44,6 +45,7 @@ public class SeleniumBasicActions {
         driver = new ChromeDriver(options);  //to open a browser instance
         driver.manage().window().maximize();    //to maximise the browser window
         driver.get("http://localhost:8080/iTinstruct-1.3.5/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         return driver;
     }
 
