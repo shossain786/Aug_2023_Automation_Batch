@@ -8,7 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class WaitsImplementation extends SeleniumBasicActions {
+public class ImplicitWaitDemo extends SeleniumBasicActions {
     WebDriver driver;
     SeleniumHelper seleniumHelper;
 
@@ -21,8 +21,8 @@ public class WaitsImplementation extends SeleniumBasicActions {
     @Test(description = "By using the library method")
     public void waitTimeTest() {
         seleniumHelper = new SeleniumHelper(driver);
-        seleniumHelper.getElement("//a[.='Contact']").click();
-        seleniumHelper.getElement("//input[@id='name']").sendKeys("Selenium");
+        seleniumHelper.clickOnElement("//a[.='Contact']");
+        seleniumHelper.enterData("//input[@id='name']","Selenium");
         SeleniumBasicActions.waitTime(4);
     }
     @BeforeMethod
