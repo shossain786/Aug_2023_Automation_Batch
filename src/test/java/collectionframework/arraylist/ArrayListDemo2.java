@@ -1,4 +1,4 @@
-package collectionframework;
+package collectionframework.arraylist;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class ArrayListDemo2 {
 //      traversing through an arraylist
 //        Normal for loop
         System.out.println("Normal for loop: ");
-        for (int i =0; i < books.size(); i++)
+        for (int i = 0; i < books.size(); i++)
             System.out.println(books.get(i));
 
 //        Advanced/enhanced for loop

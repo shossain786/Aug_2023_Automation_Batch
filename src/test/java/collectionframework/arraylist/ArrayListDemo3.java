@@ -1,4 +1,4 @@
-package collectionframework;
+package collectionframework.arraylist;
 
 import java.util.*;
 
@@ -21,6 +21,7 @@ public class ArrayListDemo3 {
 
 //        Traversing through an arraylist using iterator
         Iterator<String> iterator = countries.iterator();
+
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
@@ -49,3 +50,5 @@ public class ArrayListDemo3 {
         System.out.println(countries);
     }
 }
+// ArrayList maintain the insertion order
+//

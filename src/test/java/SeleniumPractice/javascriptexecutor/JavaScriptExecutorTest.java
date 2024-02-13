@@ -37,6 +37,12 @@ public class JavaScriptExecutorTest extends SeleniumBasicActions {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
 
+//        to perform right click in selenium
+        actions.contextClick();
+        actions.contextClick(element);
+//        how to perform drag and drop operation in selenium
+        actions.dragAndDrop(element, element);
+
         String text = seleniumHelper.getText("//div[.='Welcome to Selenium Learning!']");
         System.out.println("Text found: " + text);
         waitTime(3);
