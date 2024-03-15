@@ -2,6 +2,8 @@ public class StringBuilderDemo {
     public static void main(String[] args) {
         String str = new String("Java Selenium");
         StringBuilder stringBuilder = new StringBuilder("Java Selenium");
+        str = str + "hello";
+//        stringBuilder = stringBuilder + "Hello"; not possible in String Builder/buffer
 
         str = str.concat(" Tutorial Class");
 
