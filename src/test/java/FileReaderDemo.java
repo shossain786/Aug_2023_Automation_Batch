@@ -6,10 +6,18 @@ import java.nio.file.Paths;
 public class FileReaderDemo{
     public static void main(String[] args) throws IOException {
 //        String filePath = "C:\\Users\\Admin\\OneDrive\\Desktop\\hello.txt";
+
         String filePath = "C:/Users/Admin/OneDrive/Desktop/hello.txt";
+
+        String path = System.getProperty("user.dir") + "\\src\\test\\resources\\hello.txt";
+
+        String fileDir = System.getProperty("user.dir") + "\\downloads\\hello_1.txt";
+
+        readCompleteFile(fileDir);
+
 //        readFileUsingBufferedReader(filePath);
 //        readWithFileReader(filePath);
-        readWithFileReader(filePath);
+//        readWithFileReader(filePath);
     }
 
     static void readCompleteFile(String filePath) throws IOException {
@@ -22,6 +30,7 @@ public class FileReaderDemo{
         while ((line = bufferedReader.readLine()) != null) {
             System.out.println(line);
         }
+        bufferedReader.close();
     }
 
     static void readFileUsingBufferedReader(String filePath) throws IOException {
